@@ -1,0 +1,54 @@
+.comments {
+    width: 920px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @media (max-width: 768px) {
+        width: unset;
+    }
+}
+
+.comment {
+    &__text {
+        font-family: Open Sans;
+        font-size: 20px;
+        font-style: italic;
+        font-weight: 400;
+        line-height: 27px;
+        letter-spacing: 0em;
+        text-align: center;
+    }
+    &__image {
+        margin: 75px 0 17px 0;
+        @media (max-width: 768px) {
+            margin: 25px 0 5px 0;
+        }
+        &-inner {
+            border-radius: 100px;
+        }
+    }
+    &__title {
+        font-family: Open Sans;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 27px;
+        letter-spacing: 0em;
+    }
+    &__name {
+        font-family: Open Sans;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 27px;
+        letter-spacing: 0em;
+        margin-top: 10px;
+    }
+    &__switcher {
+        margin-top: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

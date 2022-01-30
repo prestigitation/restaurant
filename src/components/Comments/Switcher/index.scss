@@ -1,0 +1,9 @@
+.switcher {
+    width: 5px;
+    height: 5px;
+    border-radius: 5px;
+    margin: 0 2px;
+    &:hover {
+        cursor: pointer;
+    }
+}

@@ -1,10 +1,11 @@
 .button {
     &__wrapper {
-        height: 50px;
-        width: 147px;
         display: flex;
         justify-content: center;
         align-items: center;
+        &:hover {
+            cursor: pointer;
+        }
     }
     &__text {
         font-family: Open Sans;

@@ -1,0 +1,18 @@
+.cooks {
+    margin: 100px 0 105px 0;
+    @media (max-width: 768px) {
+        margin: 70px 0 80px 0;
+    }
+    &__title {
+        margin-bottom: 100px;
+    }
+    &__images {
+        display: flex;
+        justify-content: space-around;
+        gap: 32px;
+        @media (max-width: 768px) {
+            flex-direction: column;
+            gap: 16px;
+        }
+    }
+}

@@ -7,25 +7,33 @@ import history_fourth from '../../img/history_4.png'
 function History() {
     const numbersData = [
             {
-            id: 0,
-            quantity: '93',
-            text: 'Напитки'
+                id: 0,
+                quantity: '93',
+                text: 'Напитки'
             },
             {
-            id: 1,
-            quantity: '206',
-            text: 'Еда'
+                id: 1,
+                quantity: '206',
+                text: 'Еда'
             },
             {
-            id: 2,
-            quantity: '71',
-            text: 'Закуски'
+                id: 2,
+                quantity: '71',
+                text: 'Закуски'
             }
         ]
     return (
         <>
-        <div className="page__history-description">
-            <Title text="Наша" highlighted_text="История" first_font_size={54} second_font_size={54} second_color='#FF7400' />
+        <div className="page__history-description text__title-header">
+            <Title 
+                text="Наша" 
+                highlighted_text="История" 
+                first_font_size={54} 
+                second_font_size={54} 
+                second_color='#FF7400'
+                mobile_first_font_size={40}
+                mobile_second_font_size={40} 
+            />
             <div className="page__history-text">
                 Как и у любого другого самобытного места, у нас есть своя, особая история. 
                 Идея ресторана пришла основателям неожиданно. 
@@ -43,6 +51,7 @@ function History() {
                     first_font_size={20}
                     second_font_size={40}
                     width={84}
+                    has_space={false}
                 />
             )}
             </div>

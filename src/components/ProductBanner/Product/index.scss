@@ -1,0 +1,27 @@
+.product {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @media (max-width: 768px) {
+        justify-content: center;
+    }
+    &__card {
+        display: flex;
+        align-items: center;
+    }
+    &__dots {
+        margin: 0 11px 0 7px;
+        display: flex;
+        @media (max-width: 768px) {
+            display: none;
+        }
+    }
+    &__info {
+        margin-left: 30px;
+        align-items: center;
+        display: flex;
+        @media (max-width: 768px) {
+            flex-direction: column;
+        }
+    }
+}

@@ -1,5 +1,6 @@
 body {
     font-family: 'Open Sans', sans-serif;
+    overflow-x: hidden;
 }
 
 .content {
@@ -95,6 +96,15 @@ body {
         color: #BC9060;
     }
     &__title {
+        &-header {
+            &>.title {
+                @media (max-width: 768px) {
+                    line-height: unset;
+                    display: flex;
+                    flex-direction: column;
+                }
+            }
+        }
         &-small {
             font-size: 50px;
             @media (max-width: 768px) {
@@ -185,7 +195,7 @@ body {
         &-image {
             width: -moz-available;
             position: absolute;
-            height: 800px;
+            height: 825px;
             @media (max-width: 768px) {
                 object-fit: cover;
             }
@@ -299,6 +309,26 @@ body {
             }
         }
     }
+    &__menu {
+        height: auto;
+        margin-top: 150px;
+        &-wrapper {
+            position: relative;
+        }
+        @media (max-width: 768px) {
+            margin-top: 130px;
+        }
+    }
+    &__comments {
+        background: #E5E4E4;
+        min-height: 550px;
+        &-wrapper {
+            padding: 105px 260px 0 260px;
+            @media (max-width: 768px) {
+                padding: 125px 15px 25px 15px;
+            }
+        }
+    }
 }
 
 .secondary__banner {
@@ -372,5 +402,23 @@ body {
         font-style: normal;
         font-weight: 400;
         line-height: 60px;
+    }
+}
+
+.products {
+    &__banner {
+        margin-top: 130px;
+        @media (max-width: 768px) {
+            margin-top: 60px;
+        }
+    }
+}
+
+.footer {
+    &__image {
+        width: 100vw;
+        @media (max-width: 768px) {
+            object-fit: cover;
+        }
     }
 }

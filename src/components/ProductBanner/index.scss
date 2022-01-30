@@ -1,0 +1,40 @@
+.product {
+    min-width: 615px;
+    @media (max-width: 768px) {
+        min-width: 360px;
+    }
+    &__banner {
+        &-title {
+            margin-bottom: 140px;
+            &>.title {
+                @media (max-width: 768px) {
+                    line-height: unset;
+                    display: flex;
+                    flex-direction: column;
+                }
+            }
+            @media (max-width: 768px) {
+                margin-bottom: 70px;
+            }
+        }
+        &-content {
+            display: flex;
+            gap: 30px;
+            align-items: center;
+            @media (max-width: 768px) {
+                flex-direction: column;
+            }
+        }
+        &-products {
+            gap: 20px;
+            display: flex;
+            flex-direction: column;
+        }
+        &-image {
+            @media (max-width: 768px) {
+                width: 100vw;
+                object-fit: cover;
+            }
+        }
+    }
+}
